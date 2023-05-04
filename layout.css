@@ -1,0 +1,105 @@
+/* All Devices */
+body {
+    margin: 0 auto; /* center the body horizontally */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    text-align: center;
+    padding: 5px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(Misal.jpg);
+    border-radius: 80px;
+    transform:
+    rotateX(30deg)
+    translateZ(50px)
+}
+
+h1 {
+    font-size: 1.90em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Misal, sans-serif;
+    position: absolute;
+}
+
+
+/*  Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+    body {
+    width: 95%;
+    }
+
+    header,
+    footer,
+    main {
+        flex: 600px 1 1;
+    }
+
+   
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    nav ul li {
+        /* margin: 5px 0; */
+        margin-top: 5px;
+        margin-right: 0;
+        margin-bottom: 5px;
+        margin-left: 0;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+/* Larger than mobile */
+@media only screen and (min-width: 601px) {
+
+
+    body{
+    width: 80%;
+    min-width: 640px;
+    max-width: 960px;
+    }
+
+    header,
+    footer {
+        flex: 1 1 600px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav ul li {
+        flex: 1 1 100px;
+        margin: 0 20px;
+    }
+
+
+    main {
+        flex: 4 1 400px;
+    }
+
+    aside {
+        flex: 1 1 200px;
+    }
+
+    
+}

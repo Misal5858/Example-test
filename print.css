@@ -1,0 +1,232 @@
+/* PRINT.CSS */
+
+@media print {
+html {
+  background-color: rgb(59, 153, 182);
+ }
+
+ body {
+  color: rgb(91, 91, 91);
+  background-color: rgb(240,248,255);
+  box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
+}
+@font-face {
+    font-family: Misal;
+    src: url("Rubik-Regular.ttf");
+}
+
+/* HTML and Body Styles */
+html {
+    background-color: rgb(59, 153, 182);
+ }
+body {
+    color: rgb(91, 91, 91);
+    background-color: rgb(240,248,255);
+    box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
+}
+* {
+    color: rgba(16, 164, 201, 0.959);
+    font-family: Misal, sans-serif;
+}
+
+img {
+    box-shadow: rgb(101, 101, 101) 10px -10px 25px;
+}
+
+h1 {
+    text-shadow: rgb(181, 211, 181) 2px 2px 1px,
+    rgba(21, 21, 21, 0.66) 5px 5px 25px;
+    text-shadow: black 1px -3px 0;
+}
+/* Footer styles */   
+
+footer {
+    color: white;    
+    background: linear-gradient(to right, rgb(0, 79, 153) 30%, rgb(146, 184, 190));   
+    font-size: 0.90em;  
+    font-style: normal;
+    height: 30px;
+    line-height: 30px;   
+    text-align: center;
+   
+ }
+
+/* Navigation Styles */	
+nav{
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    background-color: rgb(240,248,255);
+    text-align: center
+    ;
+}
+li {
+    display: inline;
+    font-family: Misal, sans-serif;
+}
+li a {
+    text-decoration: none;
+    color: rgb(73, 165, 168);
+    padding: 20px 40px;
+}
+
+li a:hover {
+    background-color: rgb(63, 168, 218);
+    color: white;
+}
+
+/* Footer Styles */
+a:visited, a:link {
+    color:blueviolet;
+}
+
+a:active, a:hover {
+    color:magenta
+}
+
+nav ul li {
+    background-color: white;
+    border-radius: 10px;
+}
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-info{
+    color: rgba(16, 164, 201, 0.959);
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+  }
+  
+  .contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+  }
+  
+  .contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+  }
+  
+  .contact-info, .contact-form{
+    flex: 1;
+  }
+  
+  .contact-form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .contact-form .text-box:first-child{
+    margin-right: 15px;
+  }
+  
+  .contact-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .contact-form .send-btn{
+    float: right;
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  
+  .contact-form .send-btn:hover{
+    background: #0582E3;
+  }
+  
+  @media screen and (max-width: 950px){
+    .contact-section{
+      flex-direction: column;
+    }
+  
+    .contact-info, .contact-form{
+      margin: 30px 50px;
+    }
+  
+    .contact-form h2{
+      font-size: 30px;
+    }
+  
+    .contact-form .text-box{
+      width: 100%;
+    }
+  }
+  
+  /*css for alert messages*/
+  
+  .alert-success{
+    z-index: 1;
+    background: #D4EDDA;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3AD66E;
+    border-radius: 4px;
+  }
+  
+  .alert-error{
+    z-index: 1;
+    background: #FFF3CD;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #FFA502;
+    border-radius: 4px;
+  }
+  
+}
